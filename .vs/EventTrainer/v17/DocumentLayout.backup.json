@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|c:\\users\\sambi\\documents\\.net_projects\\eventtrainer\\pages\\training\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|solutionrelative:pages\\training\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|c:\\users\\sambi\\documents\\.net_projects\\eventtrainer\\pages\\training\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|solutionrelative:pages\\training\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|c:\\users\\sambi\\documents\\.net_projects\\eventtrainer\\models\\trainingdone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Training\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Edit.cshtml",
-              "RelativeToolTip": "Pages\\Training\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAACSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-26T14:57:28.026Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -44,6 +31,20 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T13:35:51.33Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Training\\Details.cshtml",
+              "ToolTip": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Details.cshtml",
+              "RelativeToolTip": "Pages\\Training\\Details.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T15:20:07.212Z",
               "EditorCaption": ""
             }
           ]

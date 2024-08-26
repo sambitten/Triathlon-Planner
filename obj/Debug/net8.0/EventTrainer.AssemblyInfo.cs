@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventTrainer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96c0941d0d479f0a27cb254f56d0822c60fe221f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8d2b2d88936624ce5adbdc97c3db11f002934c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventTrainer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventTrainer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
