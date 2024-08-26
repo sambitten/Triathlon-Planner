@@ -252,3 +252,4 @@ C:\Users\sambi\Documents\.NET_projects\EventTrainer\obj\Debug\net8.0\refint\Even
 C:\Users\sambi\Documents\.NET_projects\EventTrainer\obj\Debug\net8.0\EventTrainer.pdb
 C:\Users\sambi\Documents\.NET_projects\EventTrainer\obj\Debug\net8.0\EventTrainer.genruntimeconfig.cache
 C:\Users\sambi\Documents\.NET_projects\EventTrainer\obj\Debug\net8.0\ref\EventTrainer.dll
+C:\Users\sambi\Documents\.NET_projects\EventTrainer\obj\Debug\net8.0\EventTrainer.sourcelink.json

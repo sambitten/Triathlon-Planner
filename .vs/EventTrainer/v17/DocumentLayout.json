@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|c:\\users\\sambi\\documents\\.net_projects\\eventtrainer\\pages\\training\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|solutionrelative:pages\\training\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|c:\\users\\sambi\\documents\\.net_projects\\eventtrainer\\pages\\training\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C673BA13-6BDB-4F1C-A83B-12B5DAE01748}|EventTrainer.csproj|solutionrelative:pages\\training\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,32 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Create.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Training\\Create.cshtml",
-              "ToolTip": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Create.cshtml",
-              "RelativeToolTip": "Pages\\Training\\Create.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-26T14:57:31.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Edit.cshtml",
               "RelativeDocumentMoniker": "Pages\\Training\\Edit.cshtml",
               "ToolTip": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Pages\\Training\\Edit.cshtml",
               "RelativeToolTip": "Pages\\Training\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAACSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-26T14:57:28.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TrainingDone.cs",
               "DocumentMoniker": "C:\\Users\\sambi\\Documents\\.NET_projects\\EventTrainer\\Models\\TrainingDone.cs",
               "RelativeDocumentMoniker": "Models\\TrainingDone.cs",
