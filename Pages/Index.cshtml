@@ -4,7 +4,21 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="col-1">
+    </div>
+<div class="row">
+    <div class="col circle-col">
+        @{
+            var KmDataRun = new Shared._ProgressCirclePartialModel
+            {
+                BackgroundStroke = "#D9EFF6",
+                ForegroundStroke = "#3EAED5",
+                PercentProgress = 10, //@Model.PercentProgressSteps,
+                DisplayNumber = 50, //@Model.DisplaySteps,
+                Unit = "Km",
+                IconUrl = "/Uploads/run-shoe.png"
+            };
+        }
+        <partial name="_ProgressCirclePartial" model=@KmDataRun />
+    </div>
 </div>
