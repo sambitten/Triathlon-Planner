@@ -5,16 +5,16 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Add Workout</h1>
 <hr />
 
 <div class="row">
     <div class="col-md-4">
         <form method="post">
-            <!-- Validation summary at the top for better visibility -->
+            
             <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-            <!-- Group form fields using a fieldset for better semantics -->
+            
             <fieldset>
                 <legend>Training Details</legend>
 
@@ -47,7 +47,7 @@
                 </div>
             </fieldset>
 
-            <!-- Submit and Cancel buttons -->
+           
             <div class="form-group mt-3">
                 <input type="submit" value="Create" class="btn btn-primary" />
                 <a asp-page="Index" class="btn btn-secondary">Cancel</a>
@@ -55,6 +55,7 @@
         </form>
     </div>
 </div>
+
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
