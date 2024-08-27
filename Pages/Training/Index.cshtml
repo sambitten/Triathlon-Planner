@@ -7,6 +7,40 @@
 
 <h1>Index</h1>
 
+<form class="form-group">
+    <label asp-for="SelectedExercise" class="control-label">
+        Select Exercise:
+    </label>
+
+    <select class="p-2" asp-for="SelectedExercise" asp-items="Model.Exercises" onchange="this.form.submit();">
+        <option value="">All</option>
+    </select>
+
+   
+    <label asp-for="SortField" class="control-label">
+        Sort by:
+    </label>
+    <select class="p-2" asp-for="SortField" onchange="this.form.submit();">
+
+        <option value="Date">
+            Date
+        </option>
+
+        <option value="Exercise type">
+            Exercise type
+        </option>
+
+        <option value="Distance">
+            Distance
+        </option>
+
+        <option value="Time">
+            Time
+        </option>
+
+    </select>
+</form>
+
 <p>
     <a asp-page="Create">Create New</a>
 </p>
