@@ -1,18 +1,18 @@
-﻿@page
+﻿@page 
 @model EventTrainer.Pages.Training.IndexModel
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Track</h1>
 
 <form class="form-group">
     <label asp-for="SelectedExercise" class="control-label">
         Select Exercise:
     </label>
 
-    <select class="p-2" asp-for="SelectedExercise" asp-items="Model.Exercises" onchange="this.form.submit();">
+    <select asp-for="SelectedExercise" asp-items="Model.Exercises" onchange="this.form.submit();">
         <option value="">All</option>
     </select>
 
@@ -20,7 +20,7 @@
     <label asp-for="SortField" class="control-label">
         Sort by:
     </label>
-    <select class="p-2" asp-for="SortField" onchange="this.form.submit();">
+    <select asp-for="SortField" onchange="this.form.submit();">
 
         <option value="Date">
             Date
