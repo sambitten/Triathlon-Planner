@@ -4,21 +4,114 @@
     ViewData["Title"] = "Home page";
 }
 
-    <div class="col-1">
-    </div>
+
+
+<div class="container text-center py-5">
+    <h1 class="display-4">This Week's Training</h1>
+</div>
+
 <div class="row">
-    <div class="col circle-col">
+    <!-- Column 1: Run -->
+    <div class="col-md-4 circle-col">
+        <h5 class="text-center">Run</h5>
         @{
             var KmDataRun = new Shared._ProgressCirclePartialModel
             {
                 BackgroundStroke = "#D9EFF6",
                 ForegroundStroke = "#3EAED5",
-                PercentProgress = 10, //@Model.PercentProgressSteps,
-                DisplayNumber = 50, //@Model.DisplaySteps,
+                PercentProgress = 10,
+                DisplayNumber = 50,
                 Unit = "Km",
                 IconUrl = "/Uploads/run-shoe.png"
             };
         }
         <partial name="_ProgressCirclePartial" model=@KmDataRun />
+    </div>
+
+    <!-- Column 2: Cycle -->
+    <div class="col-md-4 circle-col">
+        <h5 class="text-center">Cycle</h5>
+        @{
+            var KmDataBike = new Shared._ProgressCirclePartialModel
+            {
+                BackgroundStroke = "#D9EFF6",
+                ForegroundStroke = "#3EAED5",
+                PercentProgress = 50,
+                DisplayNumber = 225,
+                Unit = "Km",
+                IconUrl = "/Uploads/bike.png"
+            };
+        }
+        <partial name="_ProgressCirclePartial" model=@KmDataBike />
+    </div>
+
+    <!-- Column 3: Swim -->
+    <div class="col-md-4 circle-col">
+        <h5 class="text-center">Swim</h5>
+        @{
+            var KmDataSwim = new Shared._ProgressCirclePartialModel
+            {
+                BackgroundStroke = "#D9EFF6",
+                ForegroundStroke = "#3EAED5",
+                PercentProgress = 75,
+                DisplayNumber = 10,
+                Unit = "Km",
+                IconUrl = "/Uploads/swim.png"
+            };
+        }
+        <partial name="_ProgressCirclePartial" model=@KmDataSwim />
+    </div>
+</div>
+
+<div class="row">
+    <!-- Column 1: Run -->
+    <div class="col-md-4 circle-col">
+        
+        @{
+            var MinRunData = new Shared._ProgressCirclePartialModel
+            {
+                BackgroundStroke = "#FBD7E5",
+                ForegroundStroke = "#DA387D",
+                PercentProgress = 30,
+                DisplayNumber = 15,
+                Unit = "Min",
+                IconUrl = "/Uploads/run-shoe.png"
+            };
+        }
+        <partial name="_ProgressCirclePartial" model=@MinRunData />
+    </div>
+
+    <!-- Column 2: Cycle -->
+    <div class="col-md-4 circle-col">
+        
+        @{
+            var MinBikeData = new Shared._ProgressCirclePartialModel
+            {
+                BackgroundStroke = "#FBD7E5",
+                ForegroundStroke = "#DA387D",
+                PercentProgress = 90,
+                DisplayNumber = 60,
+                Unit = "Min",
+                IconUrl = "/Uploads/bike.png"
+            };
+        }
+        <partial name="_ProgressCirclePartial" model=@MinBikeData />
+    </div>
+
+    <!-- Column 3: Swim -->
+    <div class="col-md-4 circle-col">
+        
+        @{
+            var MinSwimData = new Shared._ProgressCirclePartialModel
+            {
+                BackgroundStroke = "#FBD7E5",
+                ForegroundStroke = "#DA387D",
+                PercentProgress = 45,
+                DisplayNumber = 5,
+                Unit = "Min",
+                IconUrl = "/Uploads/swim.png"
+            };
+        }
+        <partial name="_ProgressCirclePartial" model=@MinSwimData />
     </div>
 </div>
