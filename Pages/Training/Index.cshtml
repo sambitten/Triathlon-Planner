@@ -76,14 +76,16 @@
                 @Html.DisplayFor(modelItem => item.TimeTaken)
             </td>
             <td>
-                    @Html.DisplayFor(modelItem => item.ExerciseType)
+                @Html.DisplayFor(modelItem => item.ExerciseType)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                <div class="form-group">
+                        <a asp-page="./Edit" asp-route-id="@item.ID" class="btn btn-sm btn-primary">Edit</a>
+                        <a asp-page="./Delete" asp-route-id="@item.ID" class="btn btn-sm btn-danger">Delete</a>
+                </div>
             </td>
         </tr>
 }
     </tbody>
 </table>
+
