@@ -2,58 +2,96 @@
 @model EventTrainer.Pages.Plan.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "New Training Plan";
 }
 
-<h1>Create</h1>
+<div class="container mt-5">
+    <form method="post">
 
-<h4>TrainingToDo</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="TrainingToDo.CycleDistance" class="control-label"></label>
-                <input asp-for="TrainingToDo.CycleDistance" class="form-control" />
-                <span asp-validation-for="TrainingToDo.CycleDistance" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TrainingToDo.CycleTime" class="control-label"></label>
-                <input asp-for="TrainingToDo.CycleTime" class="form-control" />
-                <span asp-validation-for="TrainingToDo.CycleTime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TrainingToDo.SwimDistance" class="control-label"></label>
-                <input asp-for="TrainingToDo.SwimDistance" class="form-control" />
-                <span asp-validation-for="TrainingToDo.SwimDistance" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TrainingToDo.SwimTime" class="control-label"></label>
-                <input asp-for="TrainingToDo.SwimTime" class="form-control" />
-                <span asp-validation-for="TrainingToDo.SwimTime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TrainingToDo.RunDistance" class="control-label"></label>
-                <input asp-for="TrainingToDo.RunDistance" class="form-control" />
-                <span asp-validation-for="TrainingToDo.RunDistance" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TrainingToDo.RunTime" class="control-label"></label>
-                <input asp-for="TrainingToDo.RunTime" class="form-control" />
-                <span asp-validation-for="TrainingToDo.RunTime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
 
-<div>
-    <a asp-page="Index">Back to List</a>
+                <h1 class="display-4 mb-4">Add New Plan</h1>
+
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <fieldset>
+                            <h4 class="card-title mb-1 fw-bold">Set Your Weekly Targets</h4>
+                            <hr />
+                            <!-- Validation Summary -->
+                            <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-4" role="alert"></div>
+
+                            <!-- Grid Layout for Inputs -->
+                            <div class="row g-3">
+                                <!-- Row 1: Cycling -->
+                                <div class="col-md-6">
+                                    <div class="mb-3 mt-3">
+                                        <label asp-for="TrainingToDo.CycleTime" class="form-label fw-bold">Cycling Time (hours)</label>
+                                        <input asp-for="TrainingToDo.CycleTime" class="form-control" type="number" step="0.01" min="0" />
+                                        <span asp-validation-for="TrainingToDo.CycleTime" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3 mt-3">
+                                        <label asp-for="TrainingToDo.CycleDistance" class="form-label fw-bold">Cycling Distance (km)</label>
+                                        <input asp-for="TrainingToDo.CycleDistance" class="form-control" type="number" step="0.1" min="0" />
+                                        <span asp-validation-for="TrainingToDo.CycleDistance" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Row 2: Running -->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="TrainingToDo.RunTime" class="form-label fw-bold">Running Time (hours)</label>
+                                        <input asp-for="TrainingToDo.RunTime" class="form-control" type="number" step="0.01" min="0" />
+                                        <span asp-validation-for="TrainingToDo.RunTime" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="TrainingToDo.RunDistance" class="form-label fw-bold">Running Distance (km)</label>
+                                        <input asp-for="TrainingToDo.RunDistance" class="form-control" type="number" step="0.1" min="0" />
+                                        <span asp-validation-for="TrainingToDo.RunDistance" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Row 3: Swimming -->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="TrainingToDo.SwimTime" class="form-label fw-bold">Swimming Time (hours)</label>
+                                        <input asp-for="TrainingToDo.SwimTime" class="form-control" type="number" step="0.01" min="0" />
+                                        <span asp-validation-for="TrainingToDo.SwimTime" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label asp-for="TrainingToDo.SwimDistance" class="form-label fw-bold">Swimming Distance (km)</label>
+                                        <input asp-for="TrainingToDo.SwimDistance" class="form-control" type="number" step="0.1" min="0" />
+                                        <span asp-validation-for="TrainingToDo.SwimDistance" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 mt-2">
+                    <input type="submit" value="Create Plan" class="btn btn-primary" />
+                    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+                </div>
+
+            </div>
+        </div>
+    </form>   
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+
+    
+
+
+
