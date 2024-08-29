@@ -6,62 +6,69 @@
 }
 
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-md-8 col-lg-6">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
 
-            <h1 class="display-4 mb-4">Add New Training</h1>
+                <h1 class="display-4 mb-4">Add New Training</h1>
 
-            <form method="post" class="card shadow-sm p-4 mb-4">
-                <div class="card-body">
-                    <fieldset>
-                        <!-- Validation Summary -->
-                        <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3" role="alert"></div>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <fieldset>
+                            <!-- Validation Summary -->
+                            <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3" role="alert"></div>
 
-                        <!-- Exercise Type -->
-                        <div class="mb-3">
-                            <label asp-for="TrainingDone.ExerciseType" class="form-label fw-bold">Exercise Type</label>
-                            <select asp-for="TrainingDone.ExerciseType"
-                                    asp-items="Html.GetEnumSelectList<EventTrainer.Models.TrainingDone.TypeOfExercise>()"
-                                    class="form-control">
-                                <option value="">Select an Exercise</option>
-                            </select>
-                            <span asp-validation-for="TrainingDone.ExerciseType" class="text-danger"></span>
-                        </div>
+                            <!-- Exercise Type -->
+                            <div class="mb-3">
+                                <label asp-for="TrainingDone.ExerciseType" class="form-label fw-bold">Exercise Type</label>
+                                <select asp-for="TrainingDone.ExerciseType"
+                                        asp-items="Html.GetEnumSelectList<EventTrainer.Models.TrainingDone.TypeOfExercise>()"
+                                        class="form-control">
+                                    <option value="">Select an Exercise</option>
+                                </select>
+                                <span asp-validation-for="TrainingDone.ExerciseType" class="text-danger"></span>
+                            </div>
 
-                        <!-- Date -->
-                        <div class="mb-3">
-                            <label asp-for="TrainingDone.Date" class="form-label fw-bold">Date</label>
-                            <input asp-for="TrainingDone.Date" class="form-control" type="date" />
-                            <span asp-validation-for="TrainingDone.Date" class="text-danger"></span>
-                        </div>
+                            <!-- Date -->
+                            <div class="mb-3">
+                                <label asp-for="TrainingDone.Date" class="form-label fw-bold">Date</label>
+                                <input asp-for="TrainingDone.Date" class="form-control" type="date" />
+                                <span asp-validation-for="TrainingDone.Date" class="text-danger"></span>
+                            </div>
 
-                        <!-- Distance -->
-                        <div class="mb-3">
-                            <label asp-for="TrainingDone.Distance" class="form-label fw-bold">Distance</label>
-                            <input asp-for="TrainingDone.Distance" class="form-control" type="number" min="0" step="0.01" />
-                            <span asp-validation-for="TrainingDone.Distance" class="text-danger"></span>
-                        </div>
+                            <!-- Distance -->
+                            <div class="mb-3">
+                                <label asp-for="TrainingDone.Distance" class="form-label fw-bold">Distance</label>
+                                <input asp-for="TrainingDone.Distance" class="form-control" type="number" min="0" step="0.01" />
+                                <span asp-validation-for="TrainingDone.Distance" class="text-danger"></span>
+                            </div>
 
-                        <!-- Time Taken -->
-                        <div class="mb-3">
-                            <label asp-for="TrainingDone.TimeTaken" class="form-label fw-bold">Time Taken</label>
-                            <input asp-for="TrainingDone.TimeTaken" class="form-control" type="text" />
-                            <span asp-validation-for="TrainingDone.TimeTaken" class="text-danger"></span>
-                        </div>
-                    </fieldset>
+                            <!-- Time Taken -->
+                            <div class="mb-3">
+                                <label asp-for="TrainingDone.TimeTaken" class="form-label fw-bold">Time Taken</label>
+                                <input asp-for="TrainingDone.TimeTaken" class="form-control" type="text" />
+                                <span asp-validation-for="TrainingDone.TimeTaken" class="text-danger"></span>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
-    </div>
 
-    <!-- Buttons -->
-    <div class="d-flex gap-2">
-        <input type="submit" value="Create" class="btn btn-primary" />
-        <a asp-page="Index" class="btn btn-secondary">Cancel</a>
-    </div>
+        <!-- Buttons -->
+        <div class="d-flex gap-2 mt-2">
+            <input type="submit" value="Create" class="btn btn-primary" />
+            <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+
+    </form>
 </div>
 
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+
+
