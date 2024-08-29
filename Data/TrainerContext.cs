@@ -25,11 +25,6 @@ namespace EventTrainer.Data
                 .Entity<TrainingDone>()
                 .Property(t => t.ExerciseType)
                 .HasConversion(new EnumToStringConverter<TrainingDone.TypeOfExercise>());
-
-            modelBuilder
-                .Entity<TrainingToDo>()
-                .Property(t => t.ExerciseType)
-                .HasConversion(new EnumToStringConverter<TrainingToDo.TypeOfExercise>());
         }
     }
 }

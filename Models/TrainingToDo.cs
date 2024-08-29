@@ -1,33 +1,39 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace EventTrainer.Models
 {
     public class TrainingToDo
-    {     
+    {
         public int ID { get; set; }
 
-        [Required]
-        public DateOnly Date {  get; set; } 
-
+        [Display(Name = "Cycling Distance (Kilometres)")]
         [Range(1, 100000, ErrorMessage = "please enter a value between 1 & 100000")]
-        [Required]
-        [Display(Name = "Distance (Kilometres)")]
-        public int Distance { get; set; }   
+        public int CycleDistance { get; set; }
 
+
+        [Display(Name = "Cycling Time (Minutes)")]
         [Range(1, 100000, ErrorMessage = "please enter a value between 1 & 100000")]
-        [Required]
-        [Display(Name = "Time (Minutes)")]
-        public int Time { get; set; }
+        public int CycleTime  { get; set; }
 
-        [Required]
-        [Display(Name = "Type of exercise")]
-        public TypeOfExercise ExerciseType { get; set; }
 
-        public enum TypeOfExercise
-        {
-            Cycle = 1,
-            Run = 2,
-            Swim = 3
-        }
+        [Display(Name = "Swimming Distance (Kilometres)")]
+        [Range(1, 100000, ErrorMessage = "please enter a value between 1 & 100000")]
+        public int SwimDistance { get; set; }
+
+
+        [Display(Name = "Swimming Time (Minutes)")]
+        [Range(1, 100000, ErrorMessage = "please enter a value between 1 & 100000")]
+        public int SwimTime { get; set; }
+
+
+        [Display(Name = "Running Distance (Kilometres)")]
+        [Range(1, 100000, ErrorMessage = "please enter a value between 1 & 100000")]
+        public int RunDistance { get; set; }
+
+
+        [Display(Name = "Running Time (Minutes)")]
+        [Range(1, 100000, ErrorMessage = "please enter a value between 1 & 100000")]
+        public int RunTime { get; set; }
     }
 }

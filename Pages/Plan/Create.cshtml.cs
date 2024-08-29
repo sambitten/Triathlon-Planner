@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using EventTrainer.Data;
 using EventTrainer.Models;
 
-namespace EventTrainer.Pages.ToDoTraining
+namespace EventTrainer.Pages.Plan
 {
     public class CreateModel : PageModel
     {

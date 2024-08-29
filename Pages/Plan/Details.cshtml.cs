@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using EventTrainer.Data;
 using EventTrainer.Models;
 
-namespace EventTrainer.Pages.ToDoTraining
+namespace EventTrainer.Pages.Plan
 {
     public class DetailsModel : PageModel
     {
