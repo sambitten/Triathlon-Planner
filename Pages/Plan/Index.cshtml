@@ -2,65 +2,83 @@
 @model EventTrainer.Pages.Plan.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "My Plan";
 }
 
-<h1>Index</h1>
+<div class="container mt-5">
+    <h1 class="display-4 mb-4">Your Training Plan</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.TrainingToDo[0].CycleDistance)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrainingToDo[0].CycleTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrainingToDo[0].SwimDistance)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrainingToDo[0].SwimTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrainingToDo[0].RunDistance)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TrainingToDo[0].RunTime)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.TrainingToDo) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CycleDistance)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CycleTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SwimDistance)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SwimTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RunDistance)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RunTime)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="my-4">
+        <a asp-page="Create" class="btn btn-primary btn-sm">Create New</a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <fieldset>
+                        <h4 class="card-title mb-1 fw-bold">Weekly Goals</h4>
+                        <hr />
+                        <!-- Validation Summary -->
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-4" role="alert"></div>
+
+                        <!-- Flexbox for side-by-side layout -->
+                        <div class="d-flex justify-content-between">
+
+                            <!-- Cycle Card -->
+                            <div class="card flex-fill text-center mx-2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Cycle</h5>
+                                    <div class="mb-2">
+                                        <span class="text-muted">Time:</span>
+                                        <p class="fw-bold">@Model.TrainingToDo[0].CycleTime</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <span class="text-muted">Distance:</span>
+                                        <p class="fw-bold">@Model.TrainingToDo[0].CycleDistance</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Run Card -->
+                            <div class="card flex-fill text-center mx-2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Run</h5>
+                                    <div class="mb-2">
+                                        <span class="text-muted">Time:</span>
+                                        <p class="fw-bold">@Model.TrainingToDo[0].RunTime</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <span class="text-muted">Distance:</span>
+                                        <p class="fw-bold">@Model.TrainingToDo[0].RunDistance</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Swim Card -->
+                            <div class="card flex-fill text-center mx-2">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Swim</h5>
+                                    <div class="mb-2">
+                                        <span class="text-muted">Time:</span>
+                                        <p class="fw-bold">@Model.TrainingToDo[0].SwimTime</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <span class="text-muted">Distance:</span>
+                                        <p class="fw-bold">@Model.TrainingToDo[0].SwimDistance</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 mt-2">
+                <input type="submit" value="Create Plan" class="btn btn-primary" />
+                <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
